@@ -6,17 +6,19 @@ def take_recipe():
     name = str(input("What is the name of this recipe: "))
     if name == "": 
       print("Recipe name cant be blank")
-    else: break
+    else: 
+      break
     
   while True: 
     cooking_time = int(input("What is the cooking time in minutes: "))
     if cooking_time <= 0:
       print("Cooking time must be greater than zero")
-    else: break
+    else: 
+      break
 
 
   while True:
-    ingredients = input("Enter a list of ingredients that are seperated by a comma: ").split(',')
+    ingredients = input("Enter a list of ingredients that are seperated by a comma: ").split(",")
     if all(not ingredient.strip() for ingredient in ingredients):
       print("You must enter atleast one ingredient")
     else:
@@ -58,7 +60,7 @@ for recipe in recipes_list:
         "Cooking time:",recipe["cooking_time"], "\n",
         "Ingredients:"
         )
-  for ingredients in ingredients_list: 
+  for ingredients in recipe["ingredients"]: 
     print(ingredients)
 
   print(
