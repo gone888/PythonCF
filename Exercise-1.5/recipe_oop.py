@@ -72,7 +72,7 @@ print(cake)
 
 banana_smoothie = Recipe("Banana Smoothie", 5)
 banana_smoothie.add_ingredients("Bananas", "Milk", "Peanut Butter", "Sugar", "Ice Cubes")
-print(cake)
+print(banana_smoothie)
 
 recipes_list = [tea, coffee, cake, banana_smoothie]
 
